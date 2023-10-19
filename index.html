@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <main>
+
+        <div class="display" id="display">
+            <span id="display-value">0</span>
+            <span class="display-error-message" id="display-error-message">Error</span>
+          </div>
+
+        <div id="content">
+            <button id="1" onclick="updateDisplay('1')" type="button" class="btn btn-primary">1</button>
+            <button id="2" onclick="updateDisplay('2')" type="button" class="btn btn-primary">2</button>
+            <button id="3" onclick="updateDisplay('3')" type="button" class="btn btn-primary">3</button>
+            <button id="<" onclick="handleDelete()" type="button" class="btn btn-secondary">&lt;</button>
+            <button id="4" onclick="updateDisplay('4')" type="button" class="btn btn-primary">4</button>
+            <button id="5" onclick="updateDisplay('5')" type="button" class="btn btn-primary">5</button>
+            <button id="6" onclick="updateDisplay('6')" type="button" class="btn btn-primary">6</button>
+            <button id="-" onclick="updateDisplay('-')" type="button" class="btn btn-primary">-</button>
+            <button id="7" onclick="updateDisplay('7')" type="button" class="btn btn-primary">7</button>
+            <button id="8" onclick="updateDisplay('8')" type="button" class="btn btn-primary">8</button>
+            <button id="9" onclick="updateDisplay('9')" type="button" class="btn btn-primary">9</button>
+            <button id="*" onclick="updateDisplay('*')" type="button" class="btn btn-primary">*</button>
+            <button id="0" onclick="updateDisplay('0')" type="button" class="btn btn-primary">0</button>
+            <button id="." onclick="updateDisplay('.')" type="button" class="btn btn-primary">.</button>
+            <button id="+" onclick="updateDisplay('+')" type="button" class="btn btn-primary">+</button>
+            <button id="/" onclick="updateDisplay('/')" type="button" class="btn btn-primary">/</button>
+            <button id="C" onclick="handleReset()" type="button" class="btn btn-secondary btn-reset">C</button>
+            <button id="=" onclick="calculateResult()" type="button" class="btn btn-secondary btn-submit">=</button>
+        </div>
+</main>
+    <script src="index.js"></script>
+</body>
+</html>
